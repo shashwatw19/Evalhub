@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evalhub"
+version = "0.1.0"
+description = "Simple standalone evaluation harness for saved agent runs using DeepEval"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "EvalHub Team" }
+]
+dependencies = [
+    "pydantic>=2.0.0",
+    "pytest>=7.0.0",
+    "streamlit>=1.30.0",
+    "deepeval>=4.3.4"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest-asyncio>=0.21.0",
+    "pytest-mock>=3.10.0"
+]
+gemini = [
+    "google-genai>=1.0.0"
+]
+
+[project.scripts]
+evalhub = "evalhub.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --strict-markers"

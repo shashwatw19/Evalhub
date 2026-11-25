@@ -1,0 +1,7 @@
+{
+  "agent_ref": {"agent_id": "card-risk"},
+  "judge_enabled": false,
+  "metrics": [
+    {"name": "exact_match", "threshold": 1.0, "required": true}
+  ]
+}

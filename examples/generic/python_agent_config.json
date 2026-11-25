@@ -1,0 +1,9 @@
+{
+  "agent": {
+    "type": "python",
+    "callable": "examples.generic.sample_agent:respond"
+  },
+  "metrics": [
+    {"name": "exact_match", "threshold": 1.0, "required": true}
+  ]
+}
