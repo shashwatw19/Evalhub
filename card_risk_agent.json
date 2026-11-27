@@ -6,7 +6,7 @@
   "connector": {
     "type": "http",
     "method": "GET",
-    "url": "http://0.0.0.0:8000/api/evalhub/investigate",
+    "url": "http://127.0.0.1:8000/api/evalhub/investigate",
     "query_params": {"run_id": "run_id"},
     "response_path": "recommendation",
     "input_path": null,

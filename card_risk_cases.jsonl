@@ -1,1 +1,1 @@
-{"case_id":"case-001","lookup":{"run_id":"c870bd05-4368-4346-a36f-989734688c91"},"expected_output":"ESCALATE"}
+{"case_id":"case-001","lookup":{"run_id":"c870bd05-4368-4346-a36f-989734688c91"}, "input":"Investigate the alert" ,"expected_output":"ESCALATE"}

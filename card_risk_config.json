@@ -1,7 +1,9 @@
 {
   "agent_ref": {"agent_id": "card-risk"},
-  "judge_enabled": false,
+  "judge_enabled": true,
+  "judge_model": "gemini-4-argon",
   "metrics": [
-    {"name": "exact_match", "threshold": 1.0, "required": true}
+    {"name": "exact_match", "threshold": 1.0, "required": true},
+    {"name": "faithfulness", "threshold": 0.7, "required": true}
   ]
 }
