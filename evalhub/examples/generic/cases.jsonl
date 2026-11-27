@@ -1,0 +1,2 @@
+{"case_id":"case-001","input":"What is 2 + 2?","actual_output":"4","expected_output":"4","tags":["smoke-test"]}
+{"case_id":"case-002","input":{"task":"classify","text":"The service is excellent."},"actual_output":{"category":"positive"},"expected_output":{"category":"positive"},"source_run_id":"agent-run-123","agent_name":"sample-agent"}

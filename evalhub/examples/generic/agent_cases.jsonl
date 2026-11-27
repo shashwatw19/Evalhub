@@ -1,0 +1,2 @@
+{"case_id":"hello","input":"hello","expected_output":"HELLO"}
+{"case_id":"world","input":"world","expected_output":"WORLD"}

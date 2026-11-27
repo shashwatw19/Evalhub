@@ -1,0 +1,10 @@
+{
+  "adapter": "generic",
+  "metrics": [
+    {
+      "name": "exact_match",
+      "threshold": 1.0,
+      "required": true
+    }
+  ]
+}

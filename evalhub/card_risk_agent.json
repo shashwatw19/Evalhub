@@ -1,0 +1,23 @@
+{
+  "agent_id": "card-risk",
+  "name": "Card risk",
+  "enabled": true,
+  "lookup_fields": {"run_id": "string"},
+  "connector": {
+    "type": "http",
+    "method": "GET",
+    "url": "http://0.0.0.0:8000/api/evalhub/investigate",
+    "query_params": {"run_id": "run_id"},
+    "response_path": "recommendation",
+    "input_path": null,
+    "run_id_path": null,
+    "status_path": null,
+    "explanation_path": null,
+    "evidence_path": null,
+    "tool_calls_path": null,
+    "retrieval_context_path": null,
+    "auth_env": null,
+    "timeout_seconds": 300,
+    "retries": 0
+  }
+}
